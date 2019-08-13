@@ -7,4 +7,6 @@ header('Content-type: application/json');
 // variable shortcut
 $d = $_SESSION['userdata'];
 
-echo '{"login": "' . $d['login'] . '", "pw":"'.$d['pw'].'", "x":"'.$d['x'].'", "y":"'.$d['y'].'"}';
+//var_dump($d);
+
+echo '{"login": "' . $d[0][0] . '", "pw":"'.$d[0][1].'", "x":"'.$d[0][2].'", "y":"'.$d[0][3].'"}';

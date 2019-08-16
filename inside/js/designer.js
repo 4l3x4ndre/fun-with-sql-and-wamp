@@ -26,4 +26,8 @@ class Designer {
     removeFrom(obj) {
         this.array.splice(obj.designer_id, 1)
     }
+
+    resetArray() {
+        this.array = []
+    }
 }
